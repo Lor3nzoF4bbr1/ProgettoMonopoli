@@ -41,13 +41,13 @@ namespace Diagramma_delle_Classi_Monopoli
             get => _costoVendita;
             set //calcola la metà del costo e lo restituisce nel get
             {
-                if (_costo >= 0)
+                if (_costoVendita >= 0)
                 {
-                    _costoVendita = _costo / 2;
+                    _costoVendita = value;
                 }
                 else
                 {
-                    _costoVendita = value;
+                    _costoVendita = _costo / 2;
                 }
             }
         }
